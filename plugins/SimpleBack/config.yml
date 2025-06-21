@@ -1,0 +1,16 @@
+# Teleport reasons, https://jd.papermc.io/paper/1.21.4/org/bukkit/event/player/PlayerTeleportEvent.TeleportCause.html
+teleport-causes:
+- PLUGIN
+- COMMAND
+# Allow /back to track death locations
+allow-back-on-death: false
+teleport-delay:
+  enabled: false
+  delay-in-seconds: 5
+  cancel-tp-on-move: true
+  buffer-distance-in-blocks: 0.5
+teleport-cooldown:
+  enabled: false
+  length-in-seconds: 30
+cache-clear-time-in-seconds: 30
+blacklisted-worlds: []

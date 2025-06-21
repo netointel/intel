@@ -1,0 +1,14 @@
+[
+  {
+    "uuid": "dda133f0-d9b9-32b9-b80d-9ff32853f2df",
+    "name": "TrangHoang",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "2940b932-ce41-3c23-b1a4-90f6c0f1cecb",
+    "name": "BaoAn_KoXinh",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

@@ -1,0 +1,67 @@
+[04:23:09] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.7+6-LTS; Microsoft Microsoft-11369942) on Linux 6.8.0-1027-azure (amd64)
+[04:23:09] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.4-232-ver/1.21.4@12d8fe0 (2025-06-09T10:15:42Z) for Minecraft 1.21.4
+[04:23:09] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:23:10] [ServerMain/INFO]: [PluginInitializerManager] Initialized 11 plugins
+[04:23:10] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (11):
+ - Back (1.8.6), BetterTeams (4.13.2), FoxAddition (1.2.2), GSit (2.4.0), Geyser-Spigot (2.7.2-SNAPSHOT), LoginSecurity (3.2.0), SetHome (2.0), SimpleTpa (7.6), ViaBackwards (5.4.0-SNAPSHOT), ViaVersion (5.4.0-SNAPSHOT), playit-gg (0.1.4)
+[04:23:16] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[04:23:19] [ServerMain/INFO]: Loaded 1370 recipes
+[04:23:19] [ServerMain/INFO]: Loaded 1481 advancements
+[04:23:19] [ServerMain/INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
+[04:23:20] [ServerMain/INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 334.5ms
+[04:23:20] [Server thread/INFO]: Starting minecraft server version 1.21.4
+[04:23:20] [Server thread/INFO]: Loading properties
+[04:23:20] [Server thread/INFO]: This server is running Paper version 1.21.4-232-ver/1.21.4@12d8fe0 (2025-06-09T10:15:42Z) (Implementing API version 1.21.4-R0.1-SNAPSHOT)
+[04:23:20] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[04:23:20] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:23:20] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:23:21] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[04:23:21] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:23:22] [Server thread/ERROR]: Encountered an unexpected exception
+org.spongepowered.configurate.loader.ParsingException: []: Unknown error occurred while loading
+	at org.spongepowered.configurate.loader.AbstractConfigurationLoader.load(AbstractConfigurationLoader.java:171) ~[configurate-core-4.2.0-20250225.064233-204.jar:?]
+	at org.spongepowered.configurate.loader.AbstractConfigurationLoader.load(AbstractConfigurationLoader.java:69) ~[configurate-core-4.2.0-20250225.064233-204.jar:?]
+	at org.spongepowered.configurate.loader.ConfigurationLoader.load(ConfigurationLoader.java:56) ~[configurate-core-4.2.0-20250225.064233-204.jar:?]
+	at io.papermc.paper.configuration.Configurations.initializeWorldDefaultsConfiguration(Configurations.java:169) ~[paper-1.21.4.jar:1.21.4-232-12d8fe0]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:213) ~[paper-1.21.4.jar:1.21.4-232-12d8fe0]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1163) ~[paper-1.21.4.jar:1.21.4-232-12d8fe0]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.4.jar:1.21.4-232-12d8fe0]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: org.spongepowered.configurate.yaml.internal.snakeyaml.scanner.ScannerException: mapping values are not allowed here
+ in 'reader', line 18, column 12:
+        enabled: true
+               ^
+
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:920) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:409) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:242) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:637) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:161) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:57) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:43) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:136) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:116) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.composer.Composer.composeScalarNode(Composer.java:249) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.composer.Composer.composeNode(Composer.java:214) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.composer.Composer.composeValueNode(Composer.java:396) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:361) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.composer.Composer.composeMappingNode(Composer.java:329) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.composer.Composer.composeNode(Composer.java:218) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.composer.Composer.getNode(Composer.java:141) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.composer.Composer.getSingleNode(Composer.java:167) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:179) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.Yaml.loadFromReader(Yaml.java:508) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.internal.snakeyaml.Yaml.load(Yaml.java:461) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.YamlConfigurationLoader.loadInternal(YamlConfigurationLoader.java:207) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.yaml.YamlConfigurationLoader.loadInternal(YamlConfigurationLoader.java:48) ~[configurate-yaml-4.2.0-20250225.064233-199.jar:?]
+	at org.spongepowered.configurate.loader.AbstractConfigurationLoader.load(AbstractConfigurationLoader.java:161) ~[configurate-core-4.2.0-20250225.064233-204.jar:?]
+	... 7 more
+[04:23:22] [Server thread/ERROR]: This crash report has been saved to: /workspaces/intel/crash-reports/crash-2025-06-21_04.23.22-server.txt
+[04:23:22] [Server thread/INFO]: Stopping server
+[04:23:22] [Server thread/INFO]: Saving players
+[04:23:22] [Server thread/INFO]: Saving worlds
+[04:23:22] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[04:23:22] [Server thread/INFO]: Waiting for I/O tasks to complete...
+[04:23:22] [Server thread/INFO]: All I/O tasks to complete
+[04:23:22] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[04:23:22] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

@@ -1,0 +1,20 @@
+error:
+  blacklisted-world: <red>Sorry, the world you are trying to return to is blacklisted!</red>
+  command-cooldown: '<gray>Sorry, that command is on cooldown for: [<hour><minute><second>]!</gray>'
+  must-be-player: <red>Sorry, you must be a player to run this command!</red>
+  no-back-locations: <gray>No back locations found!</gray>
+insert:
+  hour: <yellow><hour>H </yellow>
+  minute: <yellow><minute>m </yellow>
+  second: <yellow><second>s</yellow>
+  world: <yellow><value></yellow>
+  x-location: <yellow><value>x</yellow>
+  y-location: <yellow><value>y</yellow>
+  z-location: <yellow><value>z</yellow>
+message:
+  teleport-cancelled: <red>Teleport Cancelled</red>
+  teleport-delay: <green>Teleporting! Please wait <value> seconds!</green>
+  teleport-successful: <green>Successfully teleported to <x-loc>, <y-loc>, <z-loc>
+    in <world>!
+plugin:
+  reloaded: <gold>SimpleBack plugin reloaded</gold>
